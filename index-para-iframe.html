@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gradient</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                outline: 0;
+                border: 0;
+                user-select: none;
+                touch-action: none;
+            }
+
+            body {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .div1 {
+                display: flex;
+                width: 100%;
+                height: 100vh;
+                background-image: radial-gradient(circle, violet 10%, rgb(219, 74, 219) 20%, rgb(219, 32, 219) 40%, rgb(143, 8, 143) 90%, rgb(97, 3, 97) 100%);
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+                
+            }
+
+            h2 {
+                font-size: 3em;
+                text-transform: uppercase;
+                color: rgb(43, 1, 43);
+                padding: 20px;
+                font-family: sans-serif;
+                animation: ester 1s infinite alternate-reverse;
+                cursor: pointer;
+                
+            }
+
+            @keyframes ester {
+                from {
+                    transform: scale(1.2) translateY(-20px);
+                    color: rgb(121, 4, 121);
+                }
+            }
+
+            h2:hover {
+                color: indigo;
+                animation: hover-h2 2s infinite linear;
+                
+            }
+
+            @keyframes hover-h2 {
+                from {
+                    transform: rotate(360deg);
+                    
+                }
+            }
+
+            hr {
+                height: 2px;
+                background-color: #523c1b;
+                border: none;
+            }
+
+            .div2 {
+                font-size: 50pt;
+                text-align: center;
+                width: 100%;
+                margin: 6px 0;
+            }
+
+            .div2 p {
+                width: 100%;
+                
+            }
+
+            .div3 {
+                font-size: 2rem;
+                text-align: center;
+                margin: 25px 0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <h2>Ester</h2>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="abraço.webp">
+        <title>Ester Iron woman</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                outline: 0;
+                border: 0;
+                user-select: none;
+                touch-action: none;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                flex-direction: column;
+                background: url(Ester-iron-woman.jpg);
+                background-size: 300px;
+                background-repeat: repeat;
+                
+            }
+
+            .div-h2-2:hover .h2-invertido {
+                display: none;
+            }
+
+            .div-h2-2:hover .h2-normal {
+                display: block;
+            }
+
+            h2 {
+                font-size: 2em;
+                text-transform: capitalize;
+                font-family: sans-serif;
+                color: rgb(66, 1, 66);
+                cursor: pointer;
+                margin: 0 0 5px;
+                background-color: rgb(161, 5, 161);
+                padding: 10px 40px;
+                border-radius: 20px 40px;
+                text-align: center;
+            }
+
+            .h2-normal {
+                display: none;
+            }
+
+            iframe {
+                border: 2px rgb(43, 1, 43) solid;
+                border-radius: 30px;
+            }
+
+            @media screen
+                and (max-width: 700px) {
+                    body {
+                        background: url(Ester-iron-woman.jpg);
+                        background-size: 100% 100vh;
+                        background-repeat: no-repeat;
+                        justify-content: flex-end;
+                        padding: 0 0 15px;
+                    }
+
+                    iframe {
+                        height: 50vh;
+                        margin: 0 0 35px;
+                    }
+            }
+
+            @media screen
+                and (max-device-width: 1080px) {
+                    body {
+                        background: url(Ester-iron-woman.jpg);
+                        background-size: 100% 100vh;
+                        background-repeat: no-repeat;
+                        justify-content: flex-end;
+                        padding: 0 0 15px;
+                    }
+
+                    iframe {
+                        height: 50vh;
+                        margin: 0 0 35px;
+                    }
+
+                    h2 {
+                        padding: 10px 20px;
+                    }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div-h2-2">
+            <h2 class="h2-invertido"><bdo dir="rtl">Ester iron woman</bdo></h2>
+            <h2 class="h2-normal">Ester iron woman</h2>
+        </div>
+
+        <iframe src="index-para-iframe.html" width="80%" height="550">
+
+        </iframe>
+    </body>
+</html>
